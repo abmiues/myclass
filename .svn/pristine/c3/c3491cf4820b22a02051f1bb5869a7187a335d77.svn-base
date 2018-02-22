@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editTextPwd"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/editTextID"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/login_selector"
+        android:hint="密码"
+        android:textColor="#aaaaaa"
+        android:textSize="15sp" 
+        android:text="2"
+        android:inputType="textPassword"
+        />"
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radiogroup" >
+
+        <Button
+            android:id="@+id/forget_passwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/login_forget_passwd_bg"
+            android:paddingTop="10dp"
+            android:text="忘记密码"
+            android:textColor="#aaaaaa" />
+        <Button
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:layout_marginLeft="140dp"
+            android:background="@drawable/login_forget_passwd_bg"
+            android:paddingTop="10dp"
+            android:text="注册"
+            android:textColor="#aaaaaa" />
+
+        <Button
+            android:id="@+id/login_login_btn"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/main_login_selector"
+            android:text="登陆"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/ButtonSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/login_forget_passwd_bg"
+        android:paddingBottom="20dp"
+        android:text="设置"
+        android:textColor="#aaaaaa" />
+
+    <EditText
+        android:id="@+id/editTextID"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_alignLeft="@+id/editTextPwd"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/login_selector"
+        android:ems="10"
+        android:hint="学号/工号"
+        android:text="11"
+        android:textColor="#aaaaaa"
+        android:textSize="15sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextPwd"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:checked="true"
+            android:text="学生" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+               android:layout_marginLeft="5dp"
+            android:text="教师" />
+    </RadioGroup>
+  
+</RelativeLayout>

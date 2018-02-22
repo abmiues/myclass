@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.user.action.RegiserActivity" >
+         <TableLayout 
+             android:id="@+id/tablelayout"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="vertical" >
+              <TableRow 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal" >
+                  <TextView
+                      android:id="@+id/View"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="账号类型：" />
+                 <Spinner 
+                     android:id="@+id/spinner_type"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:entries="@array/spingarr"/>"
+            </TableRow>
+             <TableRow 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal" >
+                  <TextView
+                      android:id="@+id/View1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="账号：" />
+                  <EditText
+                      android:id="@+id/EditID"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:hint="账号" />
+            </TableRow>
+             <TableRow
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal" >
+                  <TextView
+                      android:id="@+id/View2"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="密码：" />
+                  <EditText
+                      android:id="@+id/EditPwd"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:hint="密码" />
+             </TableRow>
+             <TableRow 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal" >
+                  <TextView
+                      android:id="@+id/View3"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="确认密码：" />
+                  <EditText
+                      android:id="@+id/EditConfigPwd"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:hint="确认密码" />
+             </TableRow>
+             <TableRow 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal" >
+                  <TextView
+                      android:id="@+id/View4"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="邮箱：" />
+                  <EditText
+                      android:id="@+id/EditEmail"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:hint="邮箱" />
+             </TableRow>
+             <TableRow
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal" >
+                  <TextView
+                      android:id="@+id/view5"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="姓名：" />
+                  <EditText
+                      android:id="@+id/EditName"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:hint="姓名" />
+             </TableRow>              
+
+                          
+          <TableRow
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal" >
+         </TableRow> 
+         </TableLayout>
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal" 
+             android:layout_below="@+id/tablelayout"
+             android:id="@+id/Linearlayout"
+             >
+                  
+         </LinearLayout>
+        
+
+         <Button
+             android:id="@+id/btnReg"
+                android:layout_below="@+id/Linearlayout"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="确定" />
+
+
+         
+</RelativeLayout>
